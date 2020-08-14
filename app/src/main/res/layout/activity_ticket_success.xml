@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_White"
+    tools:context=".TicketSuccessActivity">
+
+    <ImageView
+        android:id="@+id/ic_success_buy_ticket"
+        android:layout_width="276dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/ic_success_buy_ticket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_congratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/m_regular"
+        android:text="@string/label_congratulations"
+        android:textAlignment="center"
+        android:textColor="@color/blackPrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_success_buy_ticket" />
+
+    <TextView
+        android:id="@+id/ticket_success_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/m_light"
+        android:lineSpacingExtra="8dp"
+        android:text="You just bought your ticket, \nplease enjoy your holiday."
+        android:textAlignment="center"
+        android:textColor="@color/greyPrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_congratulations" />
+
+    <Button
+        android:id="@+id/button_view_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_blue_square"
+        android:fontFamily="@font/m_medium"
+        android:text="VIEW TICKETS"
+        android:textAlignment="center"
+        android:textColor="@color/whitePrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ticket_success_description" />
+
+    <Button
+        android:id="@+id/button_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_white_square"
+        android:fontFamily="@font/m_medium"
+        android:text="MY DASHBOARD"
+        android:textAlignment="center"
+        android:textColor="@color/greyPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_view_tickets" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

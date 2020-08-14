@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_White"
+    tools:context=".SignUpTwoActivity">
+
+    <View
+        android:id="@+id/bg_gradient"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="@drawable/bg_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_final_step"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/m_regular"
+        android:text="@string/label_final_step"
+        android:textAlignment="center"
+        android:textColor="@color/whitePrimary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bg_gradient" />
+
+    <TextView
+        android:id="@+id/sign_up_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/m_light"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/sign_up_two_description"
+        android:textAlignment="center"
+        android:textColor="@color/whitePrimary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_final_step" />
+
+    <LinearLayout
+        android:id="@+id/bg_layout_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_white_layout"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_description">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/m_light"
+                android:text="@string/label_name"
+                android:textColor="@color/greyPrimary"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/full_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_input_combined"
+                android:fontFamily="@font/m_medium"
+                android:inputType="text"
+                android:lines="1"
+                android:paddingLeft="12dp"
+                android:textColor="@color/blackPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/m_light"
+                android:text="@string/label_bio"
+                android:textColor="@color/greyPrimary"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/bio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_input_combined"
+                android:fontFamily="@font/m_medium"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:paddingLeft="12dp"
+                android:textColor="@color/blackPrimary" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_continue"
+        android:layout_width="230dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_blue_square"
+        android:fontFamily="@font/m_medium"
+        android:text="@string/button_continue"
+        android:textAlignment="center"
+        android:textColor="@color/whitePrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/bg_layout_white" />
+
+    <LinearLayout
+        android:id="@+id/button_back"
+        android:layout_width="95dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_white_layout"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@id/button_continue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_layout_white">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_back"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bg_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_profile"
+        app:layout_constraintEnd_toEndOf="@id/bg_layout_white"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/bg_layout_white"
+        app:layout_constraintTop_toTopOf="@+id/bg_layout_white" />
+
+    <com.github.florent37.shapeofview.shapes.CircleView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@id/bg_profile"
+        app:layout_constraintEnd_toEndOf="@id/bg_profile"
+        app:layout_constraintStart_toStartOf="@id/bg_profile"
+        app:layout_constraintTop_toTopOf="@id/bg_profile">
+
+        <ImageView
+            android:id="@+id/value_profile_sign_up"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_profile" />
+    </com.github.florent37.shapeofview.shapes.CircleView>
+
+    <Button
+        android:id="@+id/button_add_profile"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/bg_blue_circle"
+        android:text="+"
+        android:textColor="@color/whitePrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/bg_profile"
+        app:layout_constraintStart_toStartOf="@id/bg_profile"
+        app:layout_constraintTop_toTopOf="@+id/bg_profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

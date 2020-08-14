@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Tiket Saya</string>
+
+    <string name="button_buy_ticket">BUY TICKET</string>
+    <string name="button_continue">CONTINUE</string>
+    <string name="button_explore_now">EXPLORE NOW</string>
+    <string name="button_new_account">NEW ACCOUNT</string>
+    <string name="button_sign_in">SIGN IN</string>
+    <string name="button_sign_up">SIGN UP</string>
+    <string name="get_started_description">Discover \nThe Beauty \nOf Indonesia</string>
+    <string name="label_bio">Bio</string>
+    <string name="label_congratulations">Congratulations!</string>
+    <string name="label_create_new_account">Create New Account</string>
+    <string name="label_dashboard">Dashboard</string>
+    <string name="label_email">Email</string>
+    <string name="label_final_step">Final Step</string>
+    <string name="label_information">Information</string>
+    <string name="label_main_menus">Main Menus</string>
+    <string name="label_name">Name</string>
+    <string name="label_password">Password</string>
+    <string name="label_pisa">Pisa Tower</string>
+    <string name="label_travel_tips">Travel Tips</string>
+    <string name="label_username">Username</string>
+    <string name="location_pisa">Pisa, Italy</string>
+    <string name="information_description">Knowing before travel</string>
+    <string name="main_menus_description">Explore the beauty of Indonesia</string>
+    <string name="pisa_description">The leaning of the Tower of Pisa comes into the story in 1173, when construction began.</string>
+    <string name="travel_tips_description">Learn it for many benefits</string>
+    <string name="sign_up_one_description">Please fill up the forms below \nfor information</string>
+    <string name="sign_up_two_description">Let the world knows yourself \nmore better and ever</string>
+    <string name="sign_up_three_description">Welcome to Tiket Saya, \nPlease Enjoy your Holiday.</string>
+    <string name="splash_description">Jalan-Jalan Jadi Lebih Asyik!</string>
+    <string name="value_bio">Traveller</string>
+    <string name="value_name">Elle Fanning</string>
+    <string name="value_wallet">US$ 999</string>
+</resources>
