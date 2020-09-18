@@ -3,6 +3,9 @@
 
 **ID**: Aplikasi pemesanan tiket wisata berbasis mobile menggunakan Java dengan fungsi CRUD.
 
+## Status
+END OF LIFE
+
 ## Requirements
 1. Android Studio
 2. Android Emulator or Android Device
