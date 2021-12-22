@@ -1,7 +1,5 @@
-# 👑 Java - TiketSaya
-**EN**: Mobile-based travel ticket booking application using Java with CRUD functions.
-
-**ID**: Aplikasi pemesanan tiket wisata berbasis mobile menggunakan Java dengan fungsi CRUD.
+# 👑 BWA TiketSaya
+Mobile-based travel ticket booking application using Java with CRUD functions.
 
 ## Status
 END OF LIFE
